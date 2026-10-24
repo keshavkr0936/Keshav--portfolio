@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keshav | Portfolio</title><style>
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #080d1b;
+    text-align: center;
+}
+
+header {
+    padding: 22px 12px;
+    background: #101a30;
+    border-bottom: 1px solid #243b60;
+}
+
+header h2 {
+    color: #38bdf8;
+    margin: 0;
+}
+
+nav {
+    margin-top: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.hero {
+    padding: 65px 15px 45px;
+    background:
+      radial-gradient(ellipse at top, #16345c, #080d1b 70%);
+}
+
+.avatar {
+    width: 125px;
+    height: 125px;
+    margin: auto;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+    box-shadow: 0 0 25px #0ea5e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 54px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 12px #0ea5e9; }
+    to { box-shadow: 0 0 35px #38bdf8; }
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.tagline {
+    color: #a5c7e8;
+    line-height: 1.7;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    border: 1px solid #38bdf8;
+    border-radius: 20px;
+    color: #7dd3fc;
+}
+
+section {
+    padding: 35px 15px;
+}
+
+h2 {
+    color: #38bdf8;
+}
+
+.card {
+    max-width: 450px;
+    margin: 18px auto;
+    padding: 22px;
+    border-radius: 16px;
+    background: #111c32;
+    border: 1px solid #263c5c;
+    transition: transform .3s, border-color .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.skill {
+    display: inline-block;
+    padding: 9px 13px;
+    margin: 5px;
+    background: #1d3555;
+    border-radius: 20px;
+    color: #bae6fd;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    padding: 13px 22px;
+    background: #38bdf8;
+    color: #07111f;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 24px 10px;
+    background: #101a30;
+    color: #9caec7;
+}
+
+.reveal {
+    animation: appear 1s ease both;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style></head><body><header>
+    <h2>Keshav.dev</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header><div class="hero reveal">
+    <div class="avatar">👨‍💻</div><h1>Hi, I'm <span>Keshav</span></h1>
+
+<p class="tagline">
+    B.Tech CSE Student<br>
+    Future AI & ML Developer
+</p>
+
+<div class="badge">
+    ✦ Learning • Building • Growing
+</div>
+
+<p style="margin-top:25px">
+    <button onclick="sayHello()">Say Hello 👋</button>
+</p>
+
+<p id="greeting" style="color:#7dd3fc"></p>
+
+</div><section id="about">
+    <h2>About Me</h2><div class="card">
+    <p>
+        Hello! I'm Keshav, a Computer Science
+        Engineering student interested in
+        programming, web development and
+        Artificial Intelligence.
+    </p>
+    <p>
+        I'm learning new skills and building
+        projects one step at a time.
+    </p>
+</div>
+
+</section><section id="skills">
+    <h2>My Skills</h2><div class="card">
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">C Programming</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">AI & ML</span>
+    <p style="color:#9caec7">
+        Currently learning and improving!
+    </p>
+</div>
+
+</section><section id="projects">
+    <h2>My Projects</h2><div class="card">
+    <h3>🌐 Personal Portfolio</h3>
+    <p>My first animated personal website.</p>
+    <span class="skill">HTML + CSS + JS</span>
+</div>
+
+<div class="card">
+    <h3>🚀 Future Projects</h3>
+    <p>More coding projects coming soon!</p>
+</div>
+
+</section><footer>
+    <p>Made with ❤️ by Keshav</p>
+    <p>© 2026 My Portfolio</p>
+</footer><script>
+function sayHello() {
+    document.getElementById("greeting").innerText =
+        "Thanks for visiting my portfolio! 🚀";
+}
+</script></body>
+</html>
